@@ -1,0 +1,575 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  background: #f1f1f1;
+}
+
+nav {
+  margin-bottom: -60px;
+}
+
+.active {
+  background-color: #4caf50;
+}
+
+li a:hover {
+  background-color: grey;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+  position: relative;
+  top: -60px;
+}
+
+li {
+  float: left;
+  display: inline;
+}
+
+li a {
+  display: block;
+  background-color: #f1f1f1;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+#main {
+  margin-left: 300px;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+.laptop {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+  padding-left: 20px;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.rightcolumn img {
+  width: 100%;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.column2 img {
+  width: 100%;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h1,
+.card h3 {
+  padding-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.card a {
+  text-decoration: none;
+  color: blue;
+}
+
+.card p {
+  margin-bottom: 5px;
+}
+
+.card a:visited {
+  color: blue;
+}
+
+.card a:hover {
+  opacity: 70%;
+}
+
+.card1 {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.card1 img {
+  width: 4%;
+}
+
+.card1 h1,
+.card1 h3 {
+  padding-bottom: 10px;
+}
+
+.card1 a {
+  text-decoration: none;
+  color: blue;
+}
+
+.card1 p {
+  margin-bottom: 5px;
+}
+
+.card1 a:visited {
+  color: blue;
+}
+
+.card1 a:hover {
+  opacity: 70%;
+}
+
+.time {
+  margin-top: -23px;
+  margin-left: 34px;
+  font-size: 2vh;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#btn,
+#btn1,
+#btn2,
+#btn3 {
+  padding: 5px;
+  background-color: #dcdcdc;
+  border: 2px solid #666;
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  font-weight: bold;
+}
+
+#btn:hover,
+#btn1:hover,
+#btn2:hover,
+#btn3:hover {
+  cursor: grab;
+  background-color: lightgrey;
+}
+
+#myBtn:hover,
+#myBtn1:hover,
+#myBtn2:hover,
+#myBtn3:hover,
+#myBtn4:hover,
+#myBtn5:hover,
+#myBtn6:hover,
+#myBtn7:hover,
+#myBtn8:hover,
+#myBtn9:hover {
+  background-color: lightgrey;
+}
+
+#myBtn,
+#myBtn1,
+#myBtn2,
+#myBtn3,
+#myBtn4,
+#myBtn5,
+#myBtn6,
+#myBtn7,
+#myBtn8,
+#myBtn9 {
+  width: 100%;
+  padding: 15px 15px;
+  border-radius: 10px;
+  border: 2px solid grey;
+  font-weight: bold;
+  outline: none;
+  cursor: grab;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  padding-bottom: 55px;
+}
+
+.footer h3 {
+  float: left;
+  padding-top: 10px;
+}
+
+.footer img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+
+.footer img {
+  padding-left: 10px;
+  padding-right: 10px;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.card h1 {
+  font-size: 22px;
+}
+
+.contact-form {
+  width: 85%;
+  max-width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000b3;
+  font-family: "Montserrat", sans-serif;
+}
+.contact-form h1 {
+  margin-top: -10px;
+  font-weight: 200;
+}
+.txtb {
+  border: 1px solid gray;
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+.txtb label {
+  display: block;
+  text-align: left;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.txtb input,
+.txtb textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+.formBtn {
+  display: inline-block;
+  background: #9b59b6;
+  padding: 14px 0;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.formBtn:hover {
+  opacity: 80%;
+  transition: transform 0.4s;
+}
+
+.intro {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.intro img {
+  max-height: 500px;
+  width: 100%;
+}
+
+.text {
+  font-size: 2.5vw;
+  font-weight: bold;
+  position: absolute;
+  text-shadow: 2px 2px 0px #000;
+  top: 40%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.text h4 {
+  position: absolute;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-header {
+  padding: 15px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 15px 16px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  margin-top: 18%;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.schedule {
+  text-align: center;
+}
+
+.schedule h1 {
+  margin-top: 20px;
+}
+
+.schedule table {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.schedule th,
+.schedule td {
+  padding: 10px 15px;
+}
+
+.schedule th {
+  background-color: red;
+  color: white;
+  font-size: 14px;
+}
+
+.schedule td {
+  font-weight: 500;
+  background-color: lightgrey;
+  font-size: 14px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+
+  .card h1 {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .card h5 {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .card h3 {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .card p {
+    text-align: center;
+  }
+
+  .column1,
+  .column2 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .card,
+  .card1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  ul {
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+
+  #logo {
+    width: 50%;
+    margin-bottom: 60px;
+  }
+
+  li {
+    float: none;
+    text-align: center;
+  }
+
+  li a {
+    display: block;
+    color: black;
+    padding: 16px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+  }
+
+  li a:hover {
+    background-color: #555;
+    color: black;
+  }
+
+  li:last-child,
+  ul {
+    border-bottom: none;
+  }
+
+  #btn,
+  #btn1,
+  #btn2,
+  #btn3 {
+    padding: 15px 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dcdcdc;
+    border: 2px solid #666;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 2.5vw;
+  }
+
+  #introBtn {
+    font-size: 2.5vw;
+  }
+
+  .schedule table {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
